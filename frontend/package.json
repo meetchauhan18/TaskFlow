@@ -1,5 +1,5 @@
 {
-  "name": "taskflow",
+  "name": "frontend",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -10,8 +10,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --fix --cache",
-    "format": "prettier --write --experimental-cli src/"
+
+    "lint": "eslint . --fix --cache --cache-location ./node_modules/.cache/eslint",
+    "format": "prettier --write --cache --cache-location ./node_modules/.cache/prettier src/"
   },
   "dependencies": {
     "pinia": "^3.0.4",
